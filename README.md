@@ -1,42 +1,101 @@
-# Power BI for Business Intelligence - AdventureWorks Project
+# AdventureWorks Business Intelligence Dashboard
 
-# Project Overview
-This project focuses on developing an interactive Power BI dashboard to help AdventureWorks, a global manufacturing company specializing in cycling equipment and accessories, track key performance indicators (KPIs) and gain valuable insights into sales, revenue, and customer behavior​.
+## Overview
+This project delivers a comprehensive Power BI dashboard for AdventureWorks, a global manufacturing company specializing in cycling equipment. The dashboard enables data-driven decision-making by tracking KPIs, analyzing sales trends, and evaluating customer and product performance across time and geography. It incorporates advanced metrics such as Monthly Recurring Revenue (MRR) and Average Revenue per Customer (ARPC) to align with strategic business goals.
 
-# Objective
-The goal of this project is to:
-1. Connect and transform raw data from multiple CSV files.
-2. Build a relational data model for effective analysis.
-3. Create calculated columns and measures using Data Analysis Expressions (DAX).
-4. Develop an interactive Power BI dashboard to visualize business performance.
+---
 
-# Data Sources
-The project uses multiple raw CSV files containing:
-1. Sales transactions
-2. Product details
-3. Customer information
-4. Return data
-5. Sales territories
+## Business Context
 
-# Key Features
-- KPI Tracking: Sales, revenue, profit, and return rates.
-- Regional Performance Analysis: Comparison of different sales territories.
-- Product-Level Insights: Identifying top-selling products and trends.
-- Customer Segmentation: Understanding high-value customers and purchasing behaviors.
+### Problem
+Traditional static reports limited sales visibility and hindered performance tracking.
 
-# Tools & Technologies
-- Power BI Desktop for data visualization and dashboard creation.
-- Power Query Editor for data transformation.
-- DAX (Data Analysis Expressions) for calculated fields and measures.
+### Objective
+To develop a dynamic, interactive dashboard for real-time monitoring of sales effectiveness, customer behavior, and revenue trends, while improving reporting efficiency and executive decision-making.
 
-# Outcome
-The final dashboard enables stakeholders to:
+---
 
-- Monitor real-time business performance.
-- Identify key revenue drivers.
-- Optimize decision-making based on data-driven insights.
+## Key Features & Insights
 
-# How to Use
-- Open the .pbix file in Power BI Desktop.
-- Refresh the data to load the latest information.
-- Navigate through different reports and visuals to explore insights.
+### Data Analysis
+- **Sales Trends:** Monthly and annual performance insights
+- **Customer Insights:** High-value customer segmentation
+- **Product Analysis:** Top-selling products by category
+- **Geographical Distribution:** Regional performance mapping
+- **Budget Comparison:** Actual vs. 2021 budget performance
+
+### Business Metrics
+- **Total Sales vs. Budget:** Gap analysis
+- **Monthly Recurring Revenue (MRR):** Evaluate repeatable income streams
+- **Average Revenue Per Customer (ARPC):** Identify high-value segments
+- **Return Rates & Profitability:** Operational performance indicators
+
+---
+
+## Tools & Technologies
+
+- **Power BI Desktop** for dashboard development and visualization
+- **SQL Server Management Studio (SSMS)** for data extraction and cleaning
+- **Power Query Editor** for transformation and modeling
+- **DAX (Data Analysis Expressions)** for calculated measures and KPIs
+- **Microsoft Excel & CSVs** for data export and integration
+
+---
+
+## Technical Implementation
+
+### Data Preprocessing
+- Restored the `AdventureWorksDW2019` database in SQL Server
+- Cleaned and filtered sales, customer, and product tables
+- Exported structured data into CSV format for Power BI integration
+
+### SQL Transformations
+- **Calendar Table:** Standardized time dimensions
+- **Customer Table:** Enriched with geographic info
+- **Sales Table:** Aggregated internet sales
+- **Product Table:** Cleaned product hierarchy
+
+### Power BI Model
+- Loaded CSVs into Power BI
+- Established relationships among fact and dimension tables
+- Designed interactive dashboard views with slicers and filters
+
+---
+
+## Business Impact
+
+- **Improved Sales Monitoring:** Real-time KPI updates and alerting
+- **Enhanced Decision-Making:** Data-driven insights for strategy
+- **Optimized Resource Allocation:** Focus on top-performing segments
+- **Strategic Budgeting:** Better forecasting with ARPC & MRR integration
+
+---
+
+## Results
+
+- Real-time visual tracking of sales performance
+- Clear visibility into budget vs. actual sales
+- Identification of top 10 products and customers
+- Recurring revenue insights (MRR & ARPC)
+
+---
+
+## Business Recommendations
+
+- **Optimize Sales Strategy:** Focus on high-margin products and key customers
+- **Enhance Forecasting:** Leverage ARPC and MRR for precision planning
+- **Target Geographic Expansion:** Identify and invest in high-performing regions
+
+---
+
+## Dependencies
+
+- Power BI Desktop
+- Microsoft SQL Server
+- AdventureWorksDW2019 Database
+
+---
+
+## Acknowledgments
+This project was inspired by Power BI training modules and case-based learning resources. Built for learning purposes.
+
